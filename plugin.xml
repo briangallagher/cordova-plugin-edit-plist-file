@@ -36,7 +36,12 @@
         </config-file>
 
         <!-- iOS9 whitelisting -->
-        <config-file target="Entitlements*.plist" parent="dict">
+        <config-file target="Entitlements-Release.plist" parent="dict">
+              <key>aps-environment</key>
+              <string>development</string>
+        </config-file>
+
+        <config-file target="Entitlements-Debug.plist" parent="dict">
               <key>aps-environment</key>
               <string>development</string>
         </config-file>
