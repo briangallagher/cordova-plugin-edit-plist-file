@@ -35,6 +35,10 @@
             <false></false>
         </config-file>
 
+        <config-file target="*-Info.plist" parent="aps-environment">
+            <string>development</string>
+        </config-file>
+
         <!-- iOS9 whitelisting -->
         <config-file target="Entitlements-Release.plist" parent="dict">
               <key>aps-environment</key>
