@@ -36,11 +36,9 @@
         </config-file>
 
         <!-- iOS9 whitelisting -->
-        <config-file target="NurseApp.entitlements" parent="dict">
-            <dict>
+        <config-file target="Entitlements*.plist" parent="dict">
               <key>aps-environment</key>
               <string>development</string>
-            </dict>
         </config-file>
 
     </platform>
